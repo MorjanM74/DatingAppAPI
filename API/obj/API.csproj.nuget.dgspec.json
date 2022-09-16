@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\RiderProjects\\DatingApp\\API\\API.csproj": {}
+    "C:\\Users\\Admin\\RiderProjects\\AngularApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\RiderProjects\\DatingApp\\API\\API.csproj": {
+    "C:\\Users\\Admin\\RiderProjects\\AngularApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\AngularApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Admin\\RiderProjects\\DatingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Admin\\RiderProjects\\AngularApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\RiderProjects\\DatingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\RiderProjects\\AngularApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.19.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.17, )"
