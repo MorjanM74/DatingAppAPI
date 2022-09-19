@@ -17,6 +17,6 @@ public static class HttpExtensions
             
         var paginationHeader = new PaginationHeader(currentPage, itemsPerPage, totalItems, totalPages);
         response.Headers.Add("Pagination", JsonSerializer.Serialize(paginationHeader, options));
-        response.Headers.Add("Access-Control-Expose-Headers", "Pagination");
+        response.Headers.Add("Access-Control-Expose-Headers", "Pagination"); 
     }
 }

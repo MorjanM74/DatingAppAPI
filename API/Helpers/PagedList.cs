@@ -4,15 +4,7 @@ namespace API.Helpers;
 
 public class PagedList<T> : List<T>
 {
-    public PagedList(int currentPage, int totalPages, int pageSize, int totalCount)
-    {
-        CurrentPage = currentPage;
-        TotalPages = totalPages;
-        PageSize = pageSize;
-        TotalCount = totalCount;
-    }
-
-    public PagedList(IEnumerable<T> collection, int count, int pageNumber, int pageSize) : base(collection)
+    public PagedList(IEnumerable<T> collection, int count, int pageNumber, int pageSize)
     {
         CurrentPage = pageNumber;
         TotalPages = (int) Math.Ceiling(count / (double) pageSize);
@@ -20,15 +12,7 @@ public class PagedList<T> : List<T>
         TotalCount = count;
         AddRange(collection);
     }
-
-    public PagedList(int capacity, int currentPage, int totalPages, int pageSize, int totalCount) : base(capacity)
-    {
-        CurrentPage = currentPage;
-        TotalPages = totalPages;
-        PageSize = pageSize;
-        TotalCount = totalCount;
-    }
-
+    
     public int CurrentPage { get; set; }
     public int TotalPages { get; set; }
     public int PageSize { get; set; }
